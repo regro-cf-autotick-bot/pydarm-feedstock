@@ -20,6 +20,7 @@ requirements:
     - python {{ python_min }}
     - setuptools-scm
   run:
+    - arrakis
     - corner
     - dttxml
     - emcee
@@ -30,14 +31,19 @@ requirements:
     - h5py
     - ligo-scald
     - matplotlib-base
-    - numpy <1.25
+    - numpy >=1.25
+    - pandas
     - pyepics
     - python >={{ python_min }}
+    - python-foton
+    - pyyaml
     - requests
-    - scikit-learn >=1.1.0
+    - scikit-learn >=1.2.0
     - scipy
-    - tensorflow ==2.15.0
-    - tensorflow-probability ==0.23.0
+    - tensorflow
+    - tensorflow-probability
+    - tf-keras
+    - tqdm
 
 test:
   imports:
